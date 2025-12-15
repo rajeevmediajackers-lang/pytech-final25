@@ -108,11 +108,13 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <Button
-              className="w-full bg-[#2E5BFF] hover:bg-[#1e4bd6] text-white font-medium py-3 rounded-lg"
-            >
-              Get Started
-            </Button>
+            <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button
+                className="w-full bg-[#2E5BFF] hover:bg-[#1e4bd6] text-white font-medium py-3 rounded-lg"
+              >
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       )}
