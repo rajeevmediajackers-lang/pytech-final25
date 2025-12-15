@@ -71,11 +71,13 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button
-              className="bg-[#2E5BFF] hover:bg-[#1e4bd6] text-white font-medium px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
-              Get Started
-            </Button>
+            <Link to="/contact">
+              <Button
+                className="bg-[#2E5BFF] hover:bg-[#1e4bd6] text-white font-medium px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              >
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
