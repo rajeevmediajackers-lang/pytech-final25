@@ -10,59 +10,99 @@ export const companyStats = [
 export const services = [
   {
     id: 1,
+    slug: 'web-development',
     title: 'Web Development & Design',
     description: 'Custom websites, e-commerce solutions, and progressive web apps built with cutting-edge technology.',
     icon: 'Globe',
-    features: ['Custom Website Design', 'E-commerce Solutions', 'Progressive Web Apps', 'CMS Development']
+    features: ['Custom Website Design', 'E-commerce Solutions', 'Progressive Web Apps', 'CMS Development', 'Responsive Design', 'Website Redesign']
   },
   {
     id: 2,
+    slug: 'mobile-app-development',
     title: 'Mobile App Development',
     description: 'Native and cross-platform mobile applications for iOS and Android with seamless user experiences.',
     icon: 'Smartphone',
-    features: ['iOS Development', 'Android Development', 'Cross-Platform Apps', 'App Store Optimization']
+    features: ['iOS Development', 'Android Development', 'Cross-Platform Apps', 'App Store Optimization', 'UI/UX Design', 'App Maintenance']
   },
   {
     id: 3,
+    slug: 'custom-software-development',
     title: 'Custom Software Development',
     description: 'Enterprise-grade software solutions tailored to your unique business requirements and workflows.',
     icon: 'Code2',
-    features: ['Enterprise Software', 'SaaS Applications', 'API Development', 'Cloud-Native Apps']
+    features: ['Enterprise Software', 'SaaS Applications', 'API Development', 'Cloud-Native Apps', 'Legacy Modernization', 'System Integration']
   },
   {
     id: 4,
+    slug: 'digital-marketing',
     title: 'Digital Marketing',
     description: 'Data-driven marketing strategies that drive traffic, generate leads, and boost conversions.',
     icon: 'TrendingUp',
-    features: ['SEO Optimization', 'PPC Advertising', 'Social Media Marketing', 'Content Marketing']
+    features: ['SEO Optimization', 'PPC Advertising', 'Social Media Marketing', 'Content Marketing', 'Email Marketing', 'Analytics & Reporting']
   },
   {
     id: 5,
+    slug: 'branding-creative',
     title: 'Branding & Creative',
     description: 'Compelling brand identities and creative assets that resonate with your target audience.',
     icon: 'Palette',
-    features: ['Brand Identity Design', 'Visual Identity Systems', 'Motion Graphics', 'Video Production']
+    features: ['Brand Identity Design', 'Visual Identity Systems', 'Motion Graphics', 'Video Production', 'Marketing Collateral', 'Brand Strategy']
   },
   {
     id: 6,
+    slug: 'cybersecurity',
     title: 'Cybersecurity Services',
     description: 'Comprehensive security solutions to protect your digital assets and ensure compliance.',
     icon: 'Shield',
-    features: ['Security Audits', 'Penetration Testing', 'Network Security', 'Compliance Management']
+    features: ['Security Audits', 'Penetration Testing', 'Network Security', 'Compliance Management', 'Incident Response', 'Security Training']
   },
   {
     id: 7,
+    slug: 'cloud-services',
     title: 'Cloud Services',
     description: 'Scalable cloud infrastructure and migration services for AWS, Azure, and Google Cloud.',
     icon: 'Cloud',
-    features: ['Cloud Migration', 'Infrastructure Management', 'Cloud Security', 'Cost Optimization']
+    features: ['Cloud Migration', 'Infrastructure Management', 'Cloud Security', 'Cost Optimization', 'DevOps', 'Disaster Recovery']
   },
   {
     id: 8,
+    slug: 'data-analytics-ai',
     title: 'Data Analytics & AI',
     description: 'Transform data into actionable insights with advanced analytics and AI-powered solutions.',
     icon: 'Brain',
-    features: ['Business Intelligence', 'Machine Learning', 'Predictive Analytics', 'AI Integration']
+    features: ['Business Intelligence', 'Machine Learning', 'Predictive Analytics', 'AI Integration', 'Data Visualization', 'Big Data Processing']
+  },
+  {
+    id: 9,
+    slug: 'ui-ux-design',
+    title: 'UI/UX Design',
+    description: 'User-centered design solutions that create intuitive and engaging digital experiences.',
+    icon: 'Paintbrush',
+    features: ['User Research', 'Wireframing', 'Prototyping', 'Usability Testing', 'Design Systems', 'Interaction Design']
+  },
+  {
+    id: 10,
+    slug: 'blockchain-development',
+    title: 'Blockchain Development',
+    description: 'Decentralized solutions and smart contracts for secure and transparent business operations.',
+    icon: 'Link',
+    features: ['Smart Contracts', 'DApp Development', 'NFT Platforms', 'Cryptocurrency Solutions', 'Blockchain Consulting', 'Token Development']
+  },
+  {
+    id: 11,
+    slug: 'devops-automation',
+    title: 'DevOps & Automation',
+    description: 'Streamline your development pipeline with CI/CD, infrastructure automation, and monitoring.',
+    icon: 'GitBranch',
+    features: ['CI/CD Pipeline', 'Infrastructure as Code', 'Container Orchestration', 'Monitoring & Logging', 'Automated Testing', 'Performance Optimization']
+  },
+  {
+    id: 12,
+    slug: 'erp-solutions',
+    title: 'ERP Solutions',
+    description: 'Integrated enterprise resource planning systems to streamline your business operations.',
+    icon: 'Database',
+    features: ['ERP Implementation', 'Custom ERP Development', 'ERP Integration', 'Module Customization', 'Data Migration', 'Training & Support']
   }
 ];
 
