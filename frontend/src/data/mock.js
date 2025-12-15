@@ -159,6 +159,246 @@ export const portfolioProjects = [
     image: 'https://customer-assets.emergentagent.com/job_webtech-masters/artifacts/l1hf4egp_11.png',
     results: '5000+ monthly active users',
     technologies: ['React Native', 'Node.js', 'MongoDB', 'Stripe']
+  },
+  {
+    id: 7,
+    title: 'PropFinder - Real Estate Platform',
+    client: 'PropFinder Realty',
+    industry: 'Real Estate',
+    description: 'Advanced property listing and management system with virtual tours, CRM integration, and lead management.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
+    results: '10K+ properties listed',
+    technologies: ['Next.js', 'PostgreSQL', 'AWS', 'Google Maps API']
+  },
+  {
+    id: 8,
+    title: 'FoodieExpress - Food Delivery App',
+    client: 'FoodieExpress',
+    industry: 'Food & Beverage',
+    description: 'Real-time food delivery platform with restaurant partnerships, GPS tracking, and payment integration.',
+    image: 'https://images.unsplash.com/photo-1526367790999-0150786686a2?w=800&h=600&fit=crop',
+    results: '500+ restaurants onboarded',
+    technologies: ['Flutter', 'Firebase', 'Node.js', 'Razorpay']
+  },
+  {
+    id: 9,
+    title: 'ManufacturePro - ERP System',
+    client: 'Industrial Solutions Ltd',
+    industry: 'Manufacturing',
+    description: 'Comprehensive ERP solution for manufacturing with inventory, production planning, and quality control modules.',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
+    results: '40% efficiency improvement',
+    technologies: ['Angular', 'Java Spring', 'Oracle', 'SAP Integration']
+  },
+  {
+    id: 10,
+    title: 'StreamVerse - OTT Platform',
+    client: 'StreamVerse Media',
+    industry: 'Entertainment & Media',
+    description: 'Video streaming platform with content management, subscription models, and multi-device support.',
+    image: 'https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=800&h=600&fit=crop',
+    results: '1M+ content views monthly',
+    technologies: ['React', 'AWS Media Services', 'CDN', 'Node.js']
+  },
+  {
+    id: 11,
+    title: 'AutoDealer - Car Dealership CRM',
+    client: 'AutoDealer Group',
+    industry: 'Automotive',
+    description: 'Complete dealership management system with inventory, sales tracking, and customer relationship management.',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop',
+    results: '200+ vehicles sold monthly',
+    technologies: ['Vue.js', 'Laravel', 'MySQL', 'Twilio']
+  },
+  {
+    id: 12,
+    title: 'CharityConnect - NGO Platform',
+    client: 'CharityConnect Foundation',
+    industry: 'Non-profit',
+    description: 'Donation management platform with project tracking, donor management, and impact reporting.',
+    image: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&h=600&fit=crop',
+    results: '$2M+ donations processed',
+    technologies: ['React', 'Node.js', 'Stripe', 'MongoDB']
+  },
+  {
+    id: 13,
+    title: 'FitTrack - Sports & Fitness App',
+    client: 'FitTrack Athletics',
+    industry: 'Sports & Fitness',
+    description: 'Comprehensive fitness tracking app with workout plans, nutrition guides, and community challenges.',
+    image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop',
+    results: '50K+ active users',
+    technologies: ['React Native', 'Firebase', 'GraphQL', 'Stripe']
+  },
+  {
+    id: 14,
+    title: 'HotelHub - Hotel Management System',
+    client: 'HotelHub Hospitality',
+    industry: 'Hospitality',
+    description: 'Complete hotel management solution with booking engine, PMS, and guest experience management.',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
+    results: '95% occupancy rate',
+    technologies: ['Angular', '.NET', 'SQL Server', 'Payment Gateway']
+  },
+  {
+    id: 15,
+    title: 'FashionForward - E-commerce Fashion',
+    client: 'FashionForward Retail',
+    industry: 'Fashion & Retail',
+    description: 'Modern fashion e-commerce platform with AR try-on, style recommendations, and social shopping features.',
+    image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&h=600&fit=crop',
+    results: '300% sales growth',
+    technologies: ['Next.js', 'Shopify Plus', 'AR.js', 'Redis']
+  },
+  {
+    id: 16,
+    title: 'LogiTrack - Logistics Management',
+    client: 'LogiTrack Solutions',
+    industry: 'Logistics',
+    description: 'End-to-end logistics platform with real-time tracking, route optimization, and fleet management.',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop',
+    results: '30% cost reduction',
+    technologies: ['React', 'Python', 'PostgreSQL', 'Google Maps']
+  },
+  {
+    id: 17,
+    title: 'AgriConnect - Farm Management',
+    client: 'AgriConnect',
+    industry: 'Agriculture',
+    description: 'Smart farming platform with crop monitoring, weather forecasting, and marketplace for farmers.',
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop',
+    results: '5000+ farmers connected',
+    technologies: ['Flutter', 'Node.js', 'IoT Integration', 'MongoDB']
+  },
+  {
+    id: 18,
+    title: 'LegalEase - Legal Practice Management',
+    client: 'LegalEase Partners',
+    industry: 'Legal Services',
+    description: 'Complete legal practice management software with case tracking, document management, and billing.',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop',
+    results: '500+ cases managed',
+    technologies: ['Angular', 'Java', 'MySQL', 'DocuSign API']
+  },
+  {
+    id: 19,
+    title: 'InsureMax - Insurance Portal',
+    client: 'InsureMax Group',
+    industry: 'Insurance',
+    description: 'Digital insurance platform with policy management, claims processing, and customer self-service portal.',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop',
+    results: '100K+ policies managed',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'PDF Generation']
+  },
+  {
+    id: 20,
+    title: 'EventPro - Event Management Platform',
+    client: 'EventPro',
+    industry: 'Events & Entertainment',
+    description: 'Comprehensive event management system with ticketing, registration, and venue management.',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop',
+    results: '1000+ events organized',
+    technologies: ['Vue.js', 'Laravel', 'Stripe', 'SendGrid']
+  },
+  {
+    id: 21,
+    title: 'BeautyBook - Salon Booking App',
+    client: 'BeautyBook',
+    industry: 'Beauty & Wellness',
+    description: 'Salon and spa booking platform with appointment scheduling, staff management, and payment processing.',
+    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop',
+    results: '300+ salons partnered',
+    technologies: ['React Native', 'Firebase', 'Stripe', 'Twilio']
+  },
+  {
+    id: 22,
+    title: 'ConstructPro - Construction Management',
+    client: 'ConstructPro',
+    industry: 'Construction',
+    description: 'Project management software for construction with progress tracking, budget management, and documentation.',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop',
+    results: '50+ projects completed',
+    technologies: ['Angular', '.NET', 'Azure', 'Power BI']
+  },
+  {
+    id: 23,
+    title: 'PharmaCare - Pharmacy Management',
+    client: 'PharmaCare',
+    industry: 'Pharmacy',
+    description: 'Complete pharmacy management system with inventory, billing, prescription management, and compliance.',
+    image: 'https://images.unsplash.com/photo-1576602975724-74cb70db0e46?w=800&h=600&fit=crop',
+    results: '200+ pharmacies using',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Barcode Scanner']
+  },
+  {
+    id: 24,
+    title: 'TravelBuddy - Tour Package Platform',
+    client: 'TravelBuddy',
+    industry: 'Tour & Travel',
+    description: 'Comprehensive travel platform with package bookings, itinerary planning, and travel guide features.',
+    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop',
+    results: '10K+ trips booked',
+    technologies: ['Next.js', 'Node.js', 'PostgreSQL', 'Payment Gateway']
+  },
+  {
+    id: 25,
+    title: 'EdTech Academy - Online Learning',
+    client: 'EdTech Academy',
+    industry: 'Education',
+    description: 'Complete LMS with live classes, course management, assessments, and certification programs.',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop',
+    results: '50K+ students enrolled',
+    technologies: ['React', 'Django', 'PostgreSQL', 'Zoom API']
+  },
+  {
+    id: 26,
+    title: 'RetailPOS - Point of Sale System',
+    client: 'RetailPOS Solutions',
+    industry: 'Retail',
+    description: 'Modern POS system with inventory management, customer loyalty programs, and sales analytics.',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
+    results: '1000+ retail stores',
+    technologies: ['Electron', 'Node.js', 'SQLite', 'Thermal Printer API']
+  },
+  {
+    id: 27,
+    title: 'ClinicCare - Clinic Management System',
+    client: 'ClinicCare',
+    industry: 'Healthcare',
+    description: 'Complete clinic management software with appointments, EMR, billing, and patient portal.',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop',
+    results: '150+ clinics using',
+    technologies: ['React', 'Node.js', 'MongoDB', 'HL7 FHIR']
+  },
+  {
+    id: 28,
+    title: 'CryptoTrade - Cryptocurrency Exchange',
+    client: 'CryptoTrade',
+    industry: 'Fintech',
+    description: 'Secure cryptocurrency exchange platform with wallet management, trading engine, and KYC integration.',
+    image: 'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=800&h=600&fit=crop',
+    results: '$50M+ trading volume',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'Blockchain']
+  },
+  {
+    id: 29,
+    title: 'JobPortal - Recruitment Platform',
+    client: 'JobPortal',
+    industry: 'HR & Recruitment',
+    description: 'Job portal with AI-powered matching, applicant tracking system, and employer branding tools.',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop',
+    results: '100K+ job seekers',
+    technologies: ['Vue.js', 'Python', 'Elasticsearch', 'ML Models']
+  },
+  {
+    id: 30,
+    title: 'SocialConnect - Community Platform',
+    client: 'SocialConnect',
+    industry: 'Social Media',
+    description: 'Niche social networking platform with groups, messaging, content sharing, and events.',
+    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop',
+    results: '500K+ active members',
+    technologies: ['React', 'GraphQL', 'MongoDB', 'WebSocket']
   }
 ];
 
