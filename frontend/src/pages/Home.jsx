@@ -325,7 +325,7 @@ const Home = () => {
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-2">
-              Don't just take our word for it - hear from our satisfied clients
+              Don&apos;t just take our word for it - hear from our satisfied clients
             </p>
             <p className="text-lg text-gray-500">Clients from India, USA, Canada, Ghana & More</p>
           </div>
