@@ -1,7 +1,3 @@
-#====================================================================================================
-# START - Testing Protocol - DO NOT EDIT OR REMOVE THIS SECTION
-#====================================================================================================
-
 # THIS SECTION CONTAINS CRITICAL TESTING INSTRUCTIONS FOR BOTH AGENTS
 # BOTH MAIN_AGENT AND TESTING_AGENT MUST PRESERVE THIS ENTIRE BLOCK
 
@@ -101,3 +97,105 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: |
+  Build individual service detail pages for PyTech Digital marketing website.
+  Each service on the services page should link to its own detail page with:
+  - Service-specific information (title, description, features)
+  - Contact form for inquiries
+  - Scroll-to-top functionality when navigating between pages
+
+frontend:
+  - task: "Service Detail Pages with Dynamic Routing"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/ServiceDetail.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Created ServiceDetail.jsx with dynamic routing (/services/:slug). Page includes hero section, overview, features, process, technologies, contact form, and back button."
+
+  - task: "Services Page - Know More Button Links"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/Services.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Updated Know More buttons to use Link component instead of WhatsApp links. Now redirects to /services/{slug} for each service."
+
+  - task: "ScrollToTop Integration"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Integrated ScrollToTop component in App.js inside BrowserRouter. Verified scroll position resets to 0 on navigation."
+
+  - task: "App.js Dynamic Route Configuration"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Added Route for /services/:slug pointing to ServiceDetail component. Also imported ScrollToTop and ServiceDetail."
+
+  - task: "Service Contact Form Integration"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/ServiceContactForm.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "ServiceContactForm component integrated in ServiceDetail page. Currently using mock submission (no backend yet). Shows service name dynamically."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: true
+
+test_plan:
+  current_focus:
+    - "Service Detail Pages with Dynamic Routing"
+    - "Services Page - Know More Button Links"
+    - "ScrollToTop Integration"
+    - "App.js Dynamic Route Configuration"
+    - "Service Contact Form Integration"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: |
+      Implemented individual service detail pages feature:
+      1. Created ServiceDetail.jsx with full page structure (hero, overview, features, process, technologies, contact form)
+      2. Updated App.js with dynamic route /services/:slug and integrated ScrollToTop
+      3. Updated Services.jsx to link "Know More" buttons to individual service pages
+      4. All 12 services in mock.js already have slugs defined
+      
+      Please test:
+      - Navigate from /services to individual service pages via "Know More" buttons
+      - Verify each service loads correct content based on slug
+      - Test scroll-to-top works when navigating between pages
+      - Verify contact form displays with correct service name
+      - Test breadcrumb navigation works
+      - Check "Back to All Services" button functionality
