@@ -60,18 +60,14 @@ const Services = () => {
                     ))}
                   </div>
 
-                  <a
-                    href={`https://wa.me/919205222170?text=${encodeURIComponent(`Hi, I would like to know more about ${service.title} services.`)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link to={`/services/${service.slug}`}>
                     <Button
                       className="w-full bg-[#2E5BFF] hover:bg-[#1e4bd6] text-white font-semibold py-3 rounded-lg transition-all duration-300 hover:scale-105"
                     >
                       Know More
                       <ArrowRight className="ml-2" size={20} />
                     </Button>
-                  </a>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
