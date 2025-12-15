@@ -173,15 +173,18 @@ frontend:
 backend:
   - task: "Inquiry API Endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Created /api/send-inquiry POST endpoint. Stores inquiries in MongoDB 'inquiries' collection. Also added /api/inquiries GET endpoint to retrieve all inquiries."
+      - working: true
+        agent: "testing"
+        comment: "✅ COMPREHENSIVE BACKEND TESTING COMPLETED: All 7 test cases passed. POST /api/send-inquiry working correctly with proper validation (422 for missing name/invalid email). GET /api/inquiries returning correct data structure. Multiple inquiries stored successfully. Backend service running properly with inquiry logs visible. API accessible at production URL."
 
 metadata:
   created_by: "main_agent"
