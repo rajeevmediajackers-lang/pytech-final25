@@ -280,13 +280,15 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button
-              size="lg"
-              className="bg-[#0A2463] hover:bg-[#081b4d] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105"
-            >
-              View All Projects
-              <ArrowRight className="ml-2" size={20} />
-            </Button>
+            <Link to="/portfolio">
+              <Button
+                size="lg"
+                className="bg-[#0A2463] hover:bg-[#081b4d] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105"
+              >
+                View All Projects
+                <ArrowRight className="ml-2" size={20} />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
