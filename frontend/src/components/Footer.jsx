@@ -17,10 +17,10 @@ const Footer = () => {
   const quickLinks = [
     { name: 'About Us', path: '/about' },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Careers', path: '/careers' },
-    { name: 'Blog', path: '/blog' },
     { name: 'Privacy Policy', path: '/privacy' },
-    { name: 'Terms of Service', path: '/terms' }
+    { name: 'Terms of Service', path: '/terms' },
+    { name: 'Cancellation & Refunds', path: '/refunds' },
+    { name: 'Shipping Policy', path: '/shipping' }
   ];
 
   return (
