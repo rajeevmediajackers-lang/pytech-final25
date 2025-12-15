@@ -343,7 +343,7 @@ const Home = () => {
                           <Star key={i} size={20} className="text-[#F59E0B] fill-current" />
                         ))}
                       </div>
-                      <p className="text-gray-600 mb-6 italic line-clamp-4">"{testimonial.quote}"</p>
+                      <p className="text-gray-600 mb-6 italic line-clamp-4">&ldquo;{testimonial.quote}&rdquo;</p>
                       <div className="flex items-center space-x-4">
                         <img
                           src={testimonial.image}
