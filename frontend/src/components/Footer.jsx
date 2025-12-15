@@ -39,20 +39,13 @@ const Footer = () => {
               Engineering Digital Excellence for Forward-Thinking Businesses
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#2E5BFF] transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#2E5BFF] transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#2E5BFF] transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#2E5BFF] transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#2E5BFF] transition-colors">
-                <Github size={20} />
+              <a 
+                href="https://www.linkedin.com/company/pytech-digital/?viewAsMember=true" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#2E5BFF] transition-colors"
+              >
+                <Linkedin size={24} />
               </a>
             </div>
           </div>
