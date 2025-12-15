@@ -118,3 +118,29 @@ code {
         border-bottom-color: inherit;
     }
 }
+
+/* Testimonials Auto-scroll Animation */
+@keyframes scroll-testimonials {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll-testimonials {
+    animation: scroll-testimonials 30s linear infinite;
+}
+
+.animate-scroll-testimonials:hover {
+    animation-play-state: paused;
+}
+
+/* Line clamp utility for testimonial quotes */
+.line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
