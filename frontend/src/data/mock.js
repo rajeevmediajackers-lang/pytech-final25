@@ -193,30 +193,153 @@ export const technologies = [
 export const testimonials = [
   {
     id: 1,
-    name: 'Sarah Johnson',
-    position: 'CEO',
-    company: 'FinanceHub Inc.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop',
+    name: 'Mr. Ankush',
+    position: 'Director',
+    company: 'AIHP India',
+    location: 'Mumbai, India',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop',
     rating: 5,
-    quote: 'PyTech Digital transformed our vision into reality. Their expertise in fintech and attention to detail exceeded our expectations. The platform they built has revolutionized how we serve our customers.'
+    quote: 'PyTech Digital delivered an outstanding healthcare portal for AIHP. Their understanding of the medical industry and technical expertise made the entire process smooth. Highly recommended!'
   },
   {
     id: 2,
-    name: 'Michael Chen',
-    position: 'CTO',
-    company: 'HealthConnect',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop',
+    name: 'Shobha Chadda',
+    position: 'Managing Director',
+    company: 'Redcoral Travel',
+    location: 'Delhi, India',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop',
     rating: 5,
-    quote: 'Working with PyTech was a game-changer. They delivered a HIPAA-compliant telemedicine platform on time and within budget. Their technical prowess and communication were outstanding.'
+    quote: 'Our travel booking platform has transformed our business. PyTech Digital created a seamless experience for our customers. The team is professional, responsive, and truly understands travel tech.'
   },
   {
     id: 3,
-    name: 'Emily Rodriguez',
-    position: 'Founder',
-    company: 'ShopEase Retail',
+    name: 'Tony',
+    position: 'Founder & Yoga Instructor',
+    company: 'TonYoga',
+    location: 'Gurgaon, India',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'The yoga platform PyTech built for TonYoga exceeded all expectations. Beautiful design, smooth functionality, and they captured the essence of our wellness brand perfectly. Outstanding work!'
+  },
+  {
+    id: 4,
+    name: 'Soniya Goenka',
+    position: 'Principal',
+    company: 'GD Goenka Signature School',
+    location: 'Gurgaon, India',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'PyTech Digital created an excellent school management system and website. Parents and teachers find it incredibly easy to use. The team understood our educational needs perfectly.'
+  },
+  {
+    id: 5,
+    name: 'Rahul Singha',
+    position: 'IT Manager',
+    company: 'Landmark Group',
+    location: 'Bangalore, India',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'Working with PyTech Digital has been a pleasure. They delivered our enterprise solution on time with exceptional quality. Their technical expertise and project management are top-notch.'
+  },
+  {
+    id: 6,
+    name: 'Shashank Agarwala',
+    position: 'CEO',
+    company: 'Speedcrafts Limited',
+    location: 'Noida, India',
+    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'PyTech developed our logistics platform with precision. The real-time tracking and automation features have significantly improved our operations. Excellent team and fantastic results!'
+  },
+  {
+    id: 7,
+    name: 'Neeru Arora',
+    position: 'Business Owner',
+    company: 'Arora Enterprises',
+    location: 'Chandigarh, India',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop',
     rating: 5,
-    quote: 'The e-commerce solution PyTech built for us is exceptional. Our conversion rates increased by 45% in the first quarter. They truly understand modern e-commerce and user behavior.'
+    quote: 'I found PyTech Digital and they worked closely with my idea to develop my website. The team worked hard and continues to market my product effectively. I highly recommend this wonderful team!'
+  },
+  {
+    id: 8,
+    name: 'Sanjay Sinha',
+    position: 'Marketing Head',
+    company: 'Sinha Digital Solutions',
+    location: 'Pune, India',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'One of the best Digital Marketing teams who has helped my business grow with their SEO and Social Media services. Very professional and results-driven approach.'
+  },
+  {
+    id: 9,
+    name: 'Anne Callamand',
+    position: 'Director',
+    company: 'Callamand Consulting',
+    location: 'Paris, France',
+    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'Tailored made website design and development. Professional services and friendly communication throughout the project. Very satisfied with the final product and ongoing support.'
+  },
+  {
+    id: 10,
+    name: 'Victor Onadja',
+    position: 'Founder',
+    company: 'Onadja Tech Solutions',
+    location: 'Accra, Ghana',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'Had a great experience with PyTech Digital. They delivered exactly what we needed for our African market expansion. Professional, timely, and excellent quality. You are the best of the best!'
+  },
+  {
+    id: 11,
+    name: 'Kwame Mensah',
+    position: 'CEO',
+    company: 'Ghana Digital Hub',
+    location: 'Kumasi, Ghana',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'PyTech Digital understood our vision for digital transformation in Ghana. Their mobile-first approach and attention to local market needs made all the difference. Exceptional work!'
+  },
+  {
+    id: 12,
+    name: 'Sarah Mitchell',
+    position: 'VP of Technology',
+    company: 'TechVenture Inc.',
+    location: 'San Francisco, USA',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'Working across time zones was seamless with PyTech. They delivered our fintech platform with top-tier security and performance. Their expertise in compliance and scalability is impressive.'
+  },
+  {
+    id: 13,
+    name: 'James Peterson',
+    position: 'Founder',
+    company: 'Peterson Health Systems',
+    location: 'New York, USA',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'PyTech Digital built our HIPAA-compliant healthcare platform with exceptional attention to detail. Their knowledge of US healthcare regulations and technical execution were outstanding.'
+  },
+  {
+    id: 14,
+    name: 'Emily Chen',
+    position: 'Director of Operations',
+    company: 'Chen E-commerce Group',
+    location: 'Toronto, Canada',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'Our e-commerce platform has seen tremendous growth since PyTech Digital redesigned it. The user experience improvements led to a 60% increase in conversions. Highly professional team!'
+  },
+  {
+    id: 15,
+    name: 'Michael Brown',
+    position: 'CTO',
+    company: 'Maple Tech Solutions',
+    location: 'Vancouver, Canada',
+    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop',
+    rating: 5,
+    quote: 'PyTech Digital delivered a robust cloud infrastructure solution that scales perfectly with our growth. Their technical expertise and proactive communication made this project a huge success.'
   }
 ];
 
