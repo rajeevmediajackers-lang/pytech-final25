@@ -9,6 +9,10 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Refunds from "./pages/Refunds";
+import Shipping from "./pages/Shipping";
 import { Toaster } from "./components/ui/sonner";
 
 function App() {
@@ -22,6 +26,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/refunds" element={<Refunds />} />
+          <Route path="/shipping" element={<Shipping />} />
         </Routes>
         <Footer />
         <WhatsAppButton />
