@@ -30,19 +30,21 @@ const ServiceContactForm = ({ serviceName }) => {
     setIsSubmitting(true);
 
     try {
-      // Send email with form data
-      const emailData = {
-        service: serviceName,
-        ...formData,
-        recipients: ['rajeev@pytechdigital.com', 'b.rajeev90@gmail.com']
-      };
-
-      // Mock submission - in production, this would call your backend API
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const backendUrl = process.env.REACT_APP_BACKEND_URL;
+      
+      // Send inquiry to backend API
+      const response = await axios.post(`${backendUrl}/api/send-inquiry`, {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        message: formData.message,
+        service: serviceName
+      });
       
       toast({
         title: "Inquiry Sent Successfully!",
-        description: "We'll get back to you within 24 hours.",
+        description: response.data.message || "We'll get back to you within 24 hours.",
       });
 
       // Reset form
@@ -54,9 +56,10 @@ const ServiceContactForm = ({ serviceName }) => {
         message: ''
       });
     } catch (error) {
+      console.error('Error sending inquiry:', error);
       toast({
         title: "Error",
-        description: "Failed to send inquiry. Please try again.",
+        description: error.response?.data?.detail || "Failed to send inquiry. Please try again.",
         variant: "destructive"
       });
     } finally {
