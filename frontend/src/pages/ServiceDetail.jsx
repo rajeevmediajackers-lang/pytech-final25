@@ -133,7 +133,7 @@ const ServiceDetail = () => {
   const details = serviceDetails[slug] || defaultDetails;
 
   return (
-    <div className=\"min-h-screen pt-20\">
+    <div className="min-h-screen pt-20">
       <SEO
         title={`${service.title} - PyTech Digital`}
         description={service.description}
@@ -142,67 +142,67 @@ const ServiceDetail = () => {
       />
 
       {/* Breadcrumb */}
-      <section className=\"py-8 bg-gray-50\">
-        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">
-          <div className=\"flex items-center space-x-2 text-sm\">
-            <Link to=\"/\" className=\"text-gray-500 hover:text-[#2E5BFF]\">Home</Link>
-            <span className=\"text-gray-400\">/</span>
-            <Link to=\"/services\" className=\"text-gray-500 hover:text-[#2E5BFF]\">Services</Link>
-            <span className=\"text-gray-400\">/</span>
-            <span className=\"text-[#0A2463] font-medium\">{service.title}</span>
+      <section className="py-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center space-x-2 text-sm">
+            <Link to="/" className="text-gray-500 hover:text-[#2E5BFF]">Home</Link>
+            <span className="text-gray-400">/</span>
+            <Link to="/services" className="text-gray-500 hover:text-[#2E5BFF]">Services</Link>
+            <span className="text-gray-400">/</span>
+            <span className="text-[#0A2463] font-medium">{service.title}</span>
           </div>
         </div>
       </section>
 
       {/* Hero Section */}
-      <section className=\"py-20 bg-gradient-to-br from-[#0A2463] via-[#2E5BFF] to-[#0A2463] text-white\">
-        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">
-          <div className=\"flex items-center justify-center mb-8\">
-            <div className=\"w-24 h-24 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center\">
-              <div className=\"text-white\">
+      <section className="py-20 bg-gradient-to-br from-[#0A2463] via-[#2E5BFF] to-[#0A2463] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center mb-8">
+            <div className="w-24 h-24 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+              <div className="text-white">
                 {getIconComponent(service.icon)}
               </div>
             </div>
           </div>
-          <h1 className=\"text-5xl md:text-6xl font-bold text-center mb-6\">
+          <h1 className="text-5xl md:text-6xl font-bold text-center mb-6">
             {service.title}
           </h1>
-          <p className=\"text-xl md:text-2xl text-center text-gray-200 max-w-3xl mx-auto\">
+          <p className="text-xl md:text-2xl text-center text-gray-200 max-w-3xl mx-auto">
             {service.description}
           </p>
         </div>
       </section>
 
       {/* Overview Section */}
-      <section className=\"py-20 bg-white\">
-        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">
-          <div className=\"grid grid-cols-1 lg:grid-cols-2 gap-12 items-center\">
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className=\"text-4xl font-bold text-[#0A2463] mb-6\">
+              <h2 className="text-4xl font-bold text-[#0A2463] mb-6">
                 Overview
               </h2>
-              <p className=\"text-lg text-gray-600 leading-relaxed mb-6\">
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 {details.overview}
               </p>
-              <Link to=\"#contact-form\">
+              <a href="#contact-form">
                 <Button
-                  size=\"lg\"
-                  className=\"bg-[#2E5BFF] hover:bg-[#1e4bd6] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105\"
+                  size="lg"
+                  className="bg-[#2E5BFF] hover:bg-[#1e4bd6] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105"
                 >
                   Get Started Now
-                  <ArrowRight className=\"ml-2\" size={20} />
+                  <ArrowRight className="ml-2" size={20} />
                 </Button>
-              </Link>
+              </a>
             </div>
             <div>
-              <Card className=\"border-0 shadow-2xl\">
-                <CardContent className=\"p-8\">
-                  <h3 className=\"text-2xl font-bold text-[#0A2463] mb-6\">Key Benefits</h3>
-                  <div className=\"space-y-4\">
+              <Card className="border-0 shadow-2xl">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-[#0A2463] mb-6">Key Benefits</h3>
+                  <div className="space-y-4">
                     {details.benefits.map((benefit, index) => (
-                      <div key={index} className=\"flex items-start space-x-3\">
-                        <CheckCircle2 size={24} className=\"text-[#10B981] flex-shrink-0 mt-1\" />
-                        <span className=\"text-gray-700\">{benefit}</span>
+                      <div key={index} className="flex items-start space-x-3">
+                        <CheckCircle2 size={24} className="text-[#10B981] flex-shrink-0 mt-1" />
+                        <span className="text-gray-700">{benefit}</span>
                       </div>
                     ))}
                   </div>
@@ -214,25 +214,25 @@ const ServiceDetail = () => {
       </section>
 
       {/* Features Section */}
-      <section className=\"py-20 bg-gray-50\">
-        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">
-          <div className=\"text-center mb-16\">
-            <h2 className=\"text-4xl font-bold text-[#0A2463] mb-4\">
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-[#0A2463] mb-4">
               What We Offer
             </h2>
-            <p className=\"text-xl text-gray-600\">
+            <p className="text-xl text-gray-600">
               Comprehensive solutions tailored to your needs
             </p>
           </div>
 
-          <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {service.features.map((feature, index) => (
-              <Card key={index} className=\"border-0 shadow-xl hover:shadow-2xl transition-shadow\">
-                <CardContent className=\"p-6\">
-                  <div className=\"w-12 h-12 bg-[#2E5BFF]/10 rounded-lg flex items-center justify-center mb-4\">
-                    <CheckCircle2 className=\"text-[#2E5BFF]\" size={24} />
+              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-[#2E5BFF]/10 rounded-lg flex items-center justify-center mb-4">
+                    <CheckCircle2 className="text-[#2E5BFF]" size={24} />
                   </div>
-                  <h3 className=\"text-xl font-bold text-[#0A2463] mb-2\">{feature}</h3>
+                  <h3 className="text-xl font-bold text-[#0A2463] mb-2">{feature}</h3>
                 </CardContent>
               </Card>
             ))}
@@ -241,26 +241,26 @@ const ServiceDetail = () => {
       </section>
 
       {/* Process Section */}
-      <section className=\"py-20 bg-white\">
-        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">
-          <div className=\"text-center mb-16\">
-            <h2 className=\"text-4xl font-bold text-[#0A2463] mb-4\">
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-[#0A2463] mb-4">
               Our Process
             </h2>
-            <p className=\"text-xl text-gray-600\">
+            <p className="text-xl text-gray-600">
               A proven approach to deliver exceptional results
             </p>
           </div>
 
-          <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8\">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {details.process.map((step, index) => (
-              <Card key={index} className=\"border-0 shadow-xl\">
-                <CardContent className=\"p-6\">
-                  <div className=\"w-12 h-12 bg-gradient-to-br from-[#2E5BFF] to-[#06D6A0] rounded-full flex items-center justify-center mb-4 text-white font-bold text-lg\">
+              <Card key={index} className="border-0 shadow-xl">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#2E5BFF] to-[#06D6A0] rounded-full flex items-center justify-center mb-4 text-white font-bold text-lg">
                     {index + 1}
                   </div>
-                  <h3 className=\"text-xl font-bold text-[#0A2463] mb-2\">{step.title}</h3>
-                  <p className=\"text-gray-600\">{step.desc}</p>
+                  <h3 className="text-xl font-bold text-[#0A2463] mb-2">{step.title}</h3>
+                  <p className="text-gray-600">{step.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -269,22 +269,22 @@ const ServiceDetail = () => {
       </section>
 
       {/* Technologies Section */}
-      <section className=\"py-20 bg-[#0A2463] text-white\">
-        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">
-          <div className=\"text-center mb-12\">
-            <h2 className=\"text-4xl font-bold mb-4\">
+      <section className="py-20 bg-[#0A2463] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">
               Technologies We Use
             </h2>
-            <p className=\"text-xl text-gray-300\">
+            <p className="text-xl text-gray-300">
               Industry-leading tools and technologies
             </p>
           </div>
 
-          <div className=\"flex flex-wrap justify-center gap-4\">
+          <div className="flex flex-wrap justify-center gap-4">
             {details.technologies.map((tech, index) => (
               <Badge
                 key={index}
-                className=\"bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-3 text-lg\"
+                className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-3 text-lg"
               >
                 {tech}
               </Badge>
@@ -294,19 +294,19 @@ const ServiceDetail = () => {
       </section>
 
       {/* Contact Form Section */}
-      <div id=\"contact-form\">
+      <div id="contact-form">
         <ServiceContactForm serviceName={service.title} />
       </div>
 
       {/* Back to Services */}
-      <section className=\"py-12 bg-white\">
-        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center\">
-          <Link to=\"/services\">
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Link to="/services">
             <Button
-              variant=\"outline\"
-              className=\"border-2 border-[#0A2463] text-[#0A2463] hover:bg-[#0A2463] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300\"
+              variant="outline"
+              className="border-2 border-[#0A2463] text-[#0A2463] hover:bg-[#0A2463] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300"
             >
-              <ArrowLeft className=\"mr-2\" size={20} />
+              <ArrowLeft className="mr-2" size={20} />
               Back to All Services
             </Button>
           </Link>
