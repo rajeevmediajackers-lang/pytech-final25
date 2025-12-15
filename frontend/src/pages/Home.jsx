@@ -423,20 +423,24 @@ const Home = () => {
             Let&apos;s discuss how we can help you achieve your digital goals
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-white text-[#0A2463] hover:bg-gray-100 font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-            >
-              Get Free Consultation
-              <ArrowRight className="ml-2" size={20} />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#0A2463] font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105"
-            >
-              View Our Work
-            </Button>
+            <Link to="/contact">
+              <Button
+                size="lg"
+                className="bg-white text-[#0A2463] hover:bg-gray-100 font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              >
+                Get Free Consultation
+                <ArrowRight className="ml-2" size={20} />
+              </Button>
+            </Link>
+            <Link to="/portfolio">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#0A2463] font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-300 hover:scale-105"
+              >
+                View Our Work
+              </Button>
+            </Link>
           </div>
           <p className="mt-6 text-gray-300">Response within 24 hours guaranteed</p>
         </div>
