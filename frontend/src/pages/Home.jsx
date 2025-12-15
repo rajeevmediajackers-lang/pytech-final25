@@ -324,37 +324,45 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-[#0A2463] mb-4">
               What Our Clients Say
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-2">
               Don't just take our word for it - hear from our satisfied clients
             </p>
+            <p className="text-lg text-gray-500">Clients from India, USA, Canada, Ghana & More</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} size={20} className="text-[#F59E0B] fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-6 italic">"{testimonial.quote}"</p>
-                  <div className="flex items-center space-x-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                    <div>
-                      <div className="font-bold text-[#0A2463]">{testimonial.name}</div>
-                      <div className="text-sm text-gray-600">
-                        {testimonial.position}, {testimonial.company}
+          {/* Auto-sliding Testimonials Carousel */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll-testimonials">
+              {/* Duplicate testimonials for seamless loop */}
+              {[...testimonials, ...testimonials].map((testimonial, index) => (
+                <div key={`testimonial-${index}`} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
+                  <Card className="border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 h-full">
+                    <CardContent className="p-8">
+                      <div className="flex items-center mb-4">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} size={20} className="text-[#F59E0B] fill-current" />
+                        ))}
                       </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                      <p className="text-gray-600 mb-6 italic line-clamp-4">"{testimonial.quote}"</p>
+                      <div className="flex items-center space-x-4">
+                        <img
+                          src={testimonial.image}
+                          alt={testimonial.name}
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
+                        <div>
+                          <div className="font-bold text-[#0A2463]">{testimonial.name}</div>
+                          <div className="text-sm text-gray-600">
+                            {testimonial.position}, {testimonial.company}
+                          </div>
+                          <div className="text-xs text-gray-500 mt-1">{testimonial.location}</div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
