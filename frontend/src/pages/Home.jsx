@@ -426,7 +426,7 @@ const Home = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-8 text-gray-200">
-            Let's discuss how we can help you achieve your digital goals
+            Let&apos;s discuss how we can help you achieve your digital goals
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
