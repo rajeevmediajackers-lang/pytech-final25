@@ -399,6 +399,343 @@ export const portfolioProjects = [
     image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop',
     results: '500K+ active members',
     technologies: ['React', 'GraphQL', 'MongoDB', 'WebSocket']
+  },
+  // Additional Healthcare Projects
+  {
+    id: 31,
+    title: 'MediLab - Lab Management System',
+    client: 'MediLab Diagnostics',
+    industry: 'Healthcare',
+    description: 'Complete laboratory information system with test management, reporting, and integration with hospital systems.',
+    image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&h=600&fit=crop',
+    results: '50K+ tests processed monthly',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'HL7']
+  },
+  {
+    id: 32,
+    title: 'PhysioTrack - Physiotherapy Management',
+    client: 'PhysioTrack Wellness',
+    industry: 'Healthcare',
+    description: 'Specialized physiotherapy clinic management with exercise tracking, progress monitoring, and patient engagement.',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop',
+    results: '80+ clinics using',
+    technologies: ['Flutter', 'Firebase', 'Video API', 'Analytics']
+  },
+  {
+    id: 33,
+    title: 'DentalPro - Dental Practice Software',
+    client: 'DentalPro Solutions',
+    industry: 'Healthcare',
+    description: 'Comprehensive dental practice management with imaging integration, treatment planning, and patient records.',
+    image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&h=600&fit=crop',
+    results: '200+ dental practices',
+    technologies: ['Angular', 'Java', 'MySQL', 'DICOM Integration']
+  },
+  {
+    id: 34,
+    title: 'NurseHub - Nursing Staff Management',
+    client: 'NurseHub Healthcare',
+    industry: 'Healthcare',
+    description: 'Staff scheduling, shift management, and credential tracking system for nursing professionals.',
+    image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800&h=600&fit=crop',
+    results: '5000+ nurses managed',
+    technologies: ['Vue.js', 'Laravel', 'MySQL', 'SMS Integration']
+  },
+  // Additional Education Projects
+  {
+    id: 35,
+    title: 'StudentPortal - School Management',
+    client: 'StudentPortal Education',
+    industry: 'Education',
+    description: 'Complete school ERP with admissions, attendance, grades, and parent communication.',
+    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop',
+    results: '500+ schools using',
+    technologies: ['React', 'Node.js', 'MongoDB', 'SMS Gateway']
+  },
+  {
+    id: 36,
+    title: 'TutorMatch - Online Tutoring Platform',
+    client: 'TutorMatch',
+    industry: 'Education',
+    description: 'Marketplace connecting students with tutors, featuring video sessions and progress tracking.',
+    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=600&fit=crop',
+    results: '10K+ tutor-student matches',
+    technologies: ['Next.js', 'WebRTC', 'Stripe', 'Firebase']
+  },
+  {
+    id: 37,
+    title: 'ExamPro - Assessment Platform',
+    client: 'ExamPro Systems',
+    industry: 'Education',
+    description: 'Online examination platform with question bank, auto-grading, and anti-cheating measures.',
+    image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop',
+    results: '1M+ exams conducted',
+    technologies: ['Angular', 'Python', 'PostgreSQL', 'AI Proctoring']
+  },
+  {
+    id: 38,
+    title: 'KidsLearn - Preschool App',
+    client: 'KidsLearn Education',
+    industry: 'Education',
+    description: 'Interactive learning app for preschoolers with games, activities, and parent progress tracking.',
+    image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=600&fit=crop',
+    results: '100K+ downloads',
+    technologies: ['React Native', 'Firebase', 'Gamification', 'Analytics']
+  },
+  // Additional E-commerce Projects
+  {
+    id: 39,
+    title: 'GroceryGo - Online Grocery Store',
+    client: 'GroceryGo',
+    industry: 'E-commerce',
+    description: 'Complete online grocery platform with inventory management, delivery tracking, and subscription plans.',
+    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&h=600&fit=crop',
+    results: '50K+ monthly orders',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Delivery API']
+  },
+  {
+    id: 40,
+    title: 'BookMart - Online Bookstore',
+    client: 'BookMart',
+    industry: 'E-commerce',
+    description: 'Specialized bookstore with recommendations, reviews, wishlists, and subscription boxes.',
+    image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=800&h=600&fit=crop',
+    results: '100K+ books sold',
+    technologies: ['Next.js', 'Shopify', 'Algolia', 'Stripe']
+  },
+  {
+    id: 41,
+    title: 'ElectroStore - Electronics E-commerce',
+    client: 'ElectroStore',
+    industry: 'E-commerce',
+    description: 'Electronics marketplace with product comparison, warranty management, and tech support.',
+    image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&h=600&fit=crop',
+    results: '$10M+ annual revenue',
+    technologies: ['Vue.js', 'Laravel', 'MySQL', 'Payment Gateway']
+  },
+  {
+    id: 42,
+    title: 'HandicraftHub - Artisan Marketplace',
+    client: 'HandicraftHub',
+    industry: 'E-commerce',
+    description: 'Platform for artisans to sell handmade products with storytelling and customization options.',
+    image: 'https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=800&h=600&fit=crop',
+    results: '5000+ artisans onboarded',
+    technologies: ['React', 'Stripe Connect', 'MongoDB', 'Image CDN']
+  },
+  {
+    id: 43,
+    title: 'PetStore - Pet Products E-commerce',
+    client: 'PetStore Online',
+    industry: 'E-commerce',
+    description: 'Specialized pet products store with subscription boxes, vet consultation, and community features.',
+    image: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&h=600&fit=crop',
+    results: '80K+ pet parents',
+    technologies: ['Shopify Plus', 'React', 'Subscription API', 'Twilio']
+  },
+  // Additional Finance Projects
+  {
+    id: 44,
+    title: 'WealthWise - Investment Platform',
+    client: 'WealthWise Investments',
+    industry: 'Finance & Banking',
+    description: 'Robo-advisory platform with portfolio management, tax optimization, and financial planning.',
+    image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=600&fit=crop',
+    results: '$100M+ AUM',
+    technologies: ['React', 'Python', 'PostgreSQL', 'ML Models']
+  },
+  {
+    id: 45,
+    title: 'LoanQuick - Digital Lending',
+    client: 'LoanQuick Finance',
+    industry: 'Finance & Banking',
+    description: 'Quick loan approval platform with credit scoring, document verification, and disbursement.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop',
+    results: '$50M+ loans disbursed',
+    technologies: ['Angular', 'Node.js', 'MongoDB', 'KYC API']
+  },
+  {
+    id: 46,
+    title: 'ExpenseTracker Pro - Financial Management',
+    client: 'ExpenseTracker',
+    industry: 'Finance & Banking',
+    description: 'Personal finance app with expense tracking, budgeting, investment tracking, and reports.',
+    image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&h=600&fit=crop',
+    results: '200K+ users',
+    technologies: ['React Native', 'Firebase', 'Plaid API', 'Charts']
+  },
+  {
+    id: 47,
+    title: 'PayFast - Payment Gateway',
+    client: 'PayFast Solutions',
+    industry: 'Finance & Banking',
+    description: 'Payment gateway with multiple payment modes, fraud detection, and merchant dashboard.',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop',
+    results: '$500M+ processed',
+    technologies: ['Java', 'Spring Boot', 'Redis', 'PCI DSS']
+  },
+  {
+    id: 48,
+    title: 'InvestorConnect - Stock Trading App',
+    client: 'InvestorConnect',
+    industry: 'Finance & Banking',
+    description: 'Stock trading platform with real-time quotes, portfolio management, and research tools.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop',
+    results: '50K+ active traders',
+    technologies: ['React', 'WebSocket', 'PostgreSQL', 'Market Data API']
+  },
+  // Additional Real Estate Projects
+  {
+    id: 49,
+    title: 'RentEasy - Property Rental Platform',
+    client: 'RentEasy',
+    industry: 'Real Estate',
+    description: 'Rental property platform with tenant screening, rent collection, and maintenance requests.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
+    results: '15K+ properties listed',
+    technologies: ['Vue.js', 'Node.js', 'PostgreSQL', 'Payment Gateway']
+  },
+  {
+    id: 50,
+    title: 'CommercialSpace - Commercial Real Estate',
+    client: 'CommercialSpace',
+    industry: 'Real Estate',
+    description: 'Commercial property marketplace with lease management, tenant portal, and analytics.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop',
+    results: '500+ commercial properties',
+    technologies: ['Angular', '.NET', 'SQL Server', 'CRM Integration']
+  },
+  {
+    id: 51,
+    title: 'HomeLoan Connect - Mortgage Platform',
+    client: 'HomeLoan Connect',
+    industry: 'Real Estate',
+    description: 'Mortgage comparison and application platform connecting borrowers with lenders.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
+    results: '$200M+ loans facilitated',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Credit API']
+  },
+  {
+    id: 52,
+    title: 'ConstructionTracker - Builder CRM',
+    client: 'ConstructionTracker',
+    industry: 'Real Estate',
+    description: 'CRM for real estate developers with project management, sales tracking, and customer portal.',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop',
+    results: '100+ projects managed',
+    technologies: ['React', 'Laravel', 'MySQL', 'WhatsApp API']
+  },
+  {
+    id: 53,
+    title: 'PropManage - Property Management',
+    client: 'PropManage',
+    industry: 'Real Estate',
+    description: 'Complete property management software for landlords with tenant management and accounting.',
+    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop',
+    results: '5000+ units managed',
+    technologies: ['Vue.js', 'Django', 'PostgreSQL', 'Accounting Integration']
+  },
+  // Additional Tour & Travel Projects
+  {
+    id: 54,
+    title: 'FlightBooker - Flight Booking Engine',
+    client: 'FlightBooker',
+    industry: 'Tour & Travel',
+    description: 'Flight search and booking platform with fare comparison, seat selection, and loyalty programs.',
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=600&fit=crop',
+    results: '100K+ flights booked',
+    technologies: ['React', 'Node.js', 'Amadeus API', 'Payment Gateway']
+  },
+  {
+    id: 55,
+    title: 'StayHappy - Hotel Booking Platform',
+    client: 'StayHappy',
+    industry: 'Tour & Travel',
+    description: 'Hotel reservation platform with reviews, price comparison, and last-minute deals.',
+    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop',
+    results: '50K+ bookings monthly',
+    technologies: ['Next.js', 'MongoDB', 'Hotel APIs', 'Stripe']
+  },
+  {
+    id: 56,
+    title: 'AdventureTours - Adventure Travel',
+    client: 'AdventureTours',
+    industry: 'Tour & Travel',
+    description: 'Specialized platform for adventure tours with equipment rental, guide booking, and safety features.',
+    image: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=600&fit=crop',
+    results: '10K+ adventures booked',
+    technologies: ['React', 'Firebase', 'Geolocation', 'Booking Engine']
+  },
+  {
+    id: 57,
+    title: 'CruiseConnect - Cruise Booking',
+    client: 'CruiseConnect',
+    industry: 'Tour & Travel',
+    description: 'Cruise vacation platform with cabin selection, itinerary management, and onboard services.',
+    image: 'https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?w=800&h=600&fit=crop',
+    results: '5000+ cruises booked',
+    technologies: ['Vue.js', 'Laravel', 'MySQL', 'CRM Integration']
+  },
+  {
+    id: 58,
+    title: 'VisaAssist - Visa Processing',
+    client: 'VisaAssist',
+    industry: 'Tour & Travel',
+    description: 'Visa application and processing platform with document management and status tracking.',
+    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop',
+    results: '20K+ visas processed',
+    technologies: ['Angular', 'Node.js', 'PostgreSQL', 'Document API']
+  },
+  // Additional Manufacturing Projects
+  {
+    id: 59,
+    title: 'QualityCheck - QC Management',
+    client: 'QualityCheck Systems',
+    industry: 'Manufacturing',
+    description: 'Quality control and inspection management system with defect tracking and reporting.',
+    image: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&h=600&fit=crop',
+    results: '99.5% quality compliance',
+    technologies: ['React', 'Python', 'PostgreSQL', 'IoT Sensors']
+  },
+  {
+    id: 60,
+    title: 'SupplyChainPro - SCM System',
+    client: 'SupplyChainPro',
+    industry: 'Manufacturing',
+    description: 'End-to-end supply chain management with procurement, logistics, and vendor management.',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop',
+    results: '25% cost reduction',
+    technologies: ['Angular', 'Java', 'Oracle', 'Blockchain']
+  },
+  {
+    id: 61,
+    title: 'MaintenancePro - Plant Maintenance',
+    client: 'MaintenancePro',
+    industry: 'Manufacturing',
+    description: 'Preventive maintenance system with asset tracking, work orders, and downtime analysis.',
+    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop',
+    results: '30% downtime reduction',
+    technologies: ['Vue.js', 'Node.js', 'MySQL', 'Mobile App']
+  },
+  {
+    id: 62,
+    title: 'ProductionTracker - MES System',
+    client: 'ProductionTracker',
+    industry: 'Manufacturing',
+    description: 'Manufacturing execution system with real-time production tracking and performance metrics.',
+    image: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&h=600&fit=crop',
+    results: '35% efficiency gain',
+    technologies: ['React', 'Python', 'TimeSeries DB', 'SCADA']
+  },
+  {
+    id: 63,
+    title: 'WarehousePro - Warehouse Management',
+    client: 'WarehousePro',
+    industry: 'Manufacturing',
+    description: 'WMS with inventory tracking, bin management, pick/pack operations, and shipping integration.',
+    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&h=600&fit=crop',
+    results: '50% faster fulfillment',
+    technologies: ['Angular', '.NET', 'SQL Server', 'Barcode Scanners']
   }
 ];
 
