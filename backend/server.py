@@ -1,4 +1,4 @@
-from fastapi import FastAPI, APIRouter, HTTPException, BackgroundTasks
+from fastapi import FastAPI, APIRouter
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -9,8 +9,6 @@ from pydantic import BaseModel, Field, ConfigDict, EmailStr
 from typing import List, Optional
 import uuid
 from datetime import datetime, timezone
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail, Email, To, Content
 
 
 ROOT_DIR = Path(__file__).parent
@@ -26,6 +24,13 @@ app = FastAPI()
 
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
 
 # Define Models
@@ -51,6 +56,20 @@ class InquiryRequest(BaseModel):
 class InquiryResponse(BaseModel):
     status: str
     message: str
+
+class Inquiry(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    
+    id: str
+    name: str
+    email: str
+    phone: str
+    company: Optional[str] = ""
+    message: str
+    service: str
+    timestamp: str
+    status: str = "new"
+
 
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
@@ -82,117 +101,45 @@ async def get_status_checks():
     return status_checks
 
 
-# SendGrid Email Function
-def send_inquiry_email(inquiry: InquiryRequest):
-    """Send inquiry email to recipients via SendGrid"""
-    sendgrid_api_key = os.environ.get('SENDGRID_API_KEY')
-    sender_email = os.environ.get('SENDER_EMAIL', 'noreply@pytechdigital.com')
-    
-    if not sendgrid_api_key:
-        logger.error("SENDGRID_API_KEY not configured")
-        raise Exception("Email service not configured")
-    
-    # Recipients
-    recipients = ['rajeev@pytechdigital.com', 'b.rajeev90@gmail.com']
-    
-    # Email content
-    subject = f"New Inquiry: {inquiry.service} - from {inquiry.name}"
-    
-    html_content = f"""
-    <html>
-        <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <div style="background: linear-gradient(135deg, #0A2463 0%, #2E5BFF 100%); padding: 30px; text-align: center;">
-                <h1 style="color: white; margin: 0;">New Service Inquiry</h1>
-            </div>
-            <div style="padding: 30px; background: #f9f9f9;">
-                <h2 style="color: #0A2463;">Service: {inquiry.service}</h2>
-                <table style="width: 100%; border-collapse: collapse;">
-                    <tr>
-                        <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold; width: 30%;">Name:</td>
-                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">{inquiry.name}</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Email:</td>
-                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="mailto:{inquiry.email}">{inquiry.email}</a></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Phone:</td>
-                        <td style="padding: 10px; border-bottom: 1px solid #ddd;"><a href="tel:{inquiry.phone}">{inquiry.phone}</a></td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px; border-bottom: 1px solid #ddd; font-weight: bold;">Company:</td>
-                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">{inquiry.company or 'Not provided'}</td>
-                    </tr>
-                </table>
-                <div style="margin-top: 20px;">
-                    <h3 style="color: #0A2463;">Project Details:</h3>
-                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #2E5BFF;">
-                        {inquiry.message}
-                    </div>
-                </div>
-            </div>
-            <div style="background: #0A2463; padding: 20px; text-align: center;">
-                <p style="color: #888; margin: 0; font-size: 12px;">
-                    This email was sent from the PyTech Digital website contact form.
-                </p>
-            </div>
-        </body>
-    </html>
-    """
-    
-    try:
-        sg = SendGridAPIClient(sendgrid_api_key)
-        
-        for recipient in recipients:
-            message = Mail(
-                from_email=Email(sender_email, "PyTech Digital"),
-                to_emails=To(recipient),
-                subject=subject,
-                html_content=Content("text/html", html_content)
-            )
-            response = sg.send(message)
-            logger.info(f"Email sent to {recipient}: Status {response.status_code}")
-        
-        return True
-    except Exception as e:
-        logger.error(f"Failed to send email: {str(e)}")
-        raise e
-
-
 @api_router.post("/send-inquiry", response_model=InquiryResponse)
-async def send_inquiry(inquiry: InquiryRequest, background_tasks: BackgroundTasks):
+async def send_inquiry(inquiry: InquiryRequest):
     """
-    Send a service inquiry email via SendGrid
+    Receive and store a service inquiry in the database
     """
     try:
-        # Store inquiry in database for records
+        # Store inquiry in database
         inquiry_doc = {
             "id": str(uuid.uuid4()),
             "name": inquiry.name,
             "email": inquiry.email,
             "phone": inquiry.phone,
-            "company": inquiry.company,
+            "company": inquiry.company or "",
             "message": inquiry.message,
             "service": inquiry.service,
             "timestamp": datetime.now(timezone.utc).isoformat(),
-            "status": "pending"
+            "status": "new"
         }
         await db.inquiries.insert_one(inquiry_doc)
         
-        # Send email in background
-        background_tasks.add_task(send_inquiry_email, inquiry)
+        logger.info(f"New inquiry received from {inquiry.name} for {inquiry.service}")
         
         return InquiryResponse(
             status="success",
-            message="Your inquiry has been sent successfully. We'll get back to you within 24 hours."
+            message="Your inquiry has been received successfully. We'll get back to you within 24 hours."
         )
     except Exception as e:
         logger.error(f"Error processing inquiry: {str(e)}")
-        # Even if email fails, we've stored the inquiry
-        return InquiryResponse(
-            status="success",
-            message="Your inquiry has been received. We'll get back to you within 24 hours."
-        )
+        raise
+
+
+@api_router.get("/inquiries", response_model=List[Inquiry])
+async def get_inquiries():
+    """
+    Get all inquiries (for admin purposes)
+    """
+    inquiries = await db.inquiries.find({}, {"_id": 0}).to_list(1000)
+    return inquiries
+
 
 # Include the router in the main app
 app.include_router(api_router)
@@ -204,13 +151,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
